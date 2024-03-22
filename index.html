@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Stangl</title>
+  <meta name="description" content="Breathe better with Stangl">
+  <meta name="keywords" content="HVAC, mechanical, air purification, airbox, Kansas City, MO">
+  <meta name="author" content="Stangl">
+  <!-- Open Graph Meta Tags (for better sharing on social media) -->
+  <meta property="og:title" content="Stangl">
+  <meta property="og:description" content="Breathe better with Stangl">
+  <link rel="apple-touch-icon" sizes="180x180" href="pics/logo.png">
+<link rel="icon" type="image/png" href="pics/logo.png" sizes="32x32">
+<link rel="icon" type="image/png" href="pics/logo.png" sizes="16x16">
+<link rel="mask-icon" href="pics/logo.png" color="#fff">
+<link rel="shortcut icon" href="pics/logo.png">
+<meta property="og:image" content="pics/logo.png">
+<meta property="og:type" content="website">  
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<video poster="pics/wall.jpg" playsinline autoplay muted loop>
+<source src="pics/low.webm" type="video/webm">
+</video>
+<div class="overlay"></div>
+<header>
+<h1>STANGL</h1>
+  <nav>
+    <a href="https://brambletwist.com/">#BreateBetter</a>
+    <a href="https://luminafields.com/">Meet Bud AI</a>
+    <a href="index2.html">Store</a>
+    <a onclick="composeEmail()">Contact</a>
+</header>
+<div id="fashion">
+
+  <div class="chat-window" id="chatWindow">
+  </div> 
+</div>
+
+<input class="input" type="text" id="userInput" style="color: black;" placeholder="Type message..." oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
+
+
+</div>
+
+<script>
+
+function composeEmail() {
+    // Email address
+    var email = "zachstangl@gmail.com";
+
+    // Subject
+    var subject = encodeURIComponent("#BreatheBetter Package Details");
+
+    // Body
+    var body = encodeURIComponent("Ensuring clean air is essential for our health and well-being, as it directly impacts our respiratory system and overall quality of life. With AirBox's advanced charcoal filtration system, we guarantee an unparalleled level of purity in the air you breathe. Charcoal filtration effectively traps harmful pollutants and toxins, including allergens, dust, and airborne particles, providing you with a sanctuary of fresh and clean air. By investing in AirBox, you not only safeguard your health but also create a conducive environment for productivity and relaxation. Experience the difference with AirBox and breathe better today.");
+
+    // Construct the mailto link
+    var mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+
+    // Open the default email client
+    window.location.href = mailtoLink;
+}
+
+</script>
+
+<script  src="chatbot2.js"></script>
+<script  src="basedata.js"></script>
+<script  src="script2.js"></script>
+
+
+
+</body>
+</html>
