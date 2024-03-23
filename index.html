@@ -29,18 +29,16 @@
 <header>
 <h1>STANGL</h1>
   <nav>
-    <a href="https://brambletwist.com/">#BreateBetter</a>
-    <a href="https://luminafields.com/">Meet Bud AI</a>
-    <a href="index2.html">Store</a>
+    <a href="index2.html">Pricing</a>
     <a onclick="composeEmail()">Contact</a>
+    <a onclick="liveChat()">Live Chat</a>
 </header>
+
+
 <div id="fashion">
-
-  <div class="chat-window" id="chatWindow">
-  </div> 
+<div class="chat-window" id="chatWindow"></div> 
+<input class="userInput" type="text" id="userInput" placeholder="Type message..." oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
 </div>
-
-<input class="input" type="text" id="userInput" style="color: black;" placeholder="Type message..." oninput="checkPasscode();" onkeydown="handleKeyPress(event)">
 
 
 </div>
@@ -62,6 +60,10 @@ function composeEmail() {
 
     // Open the default email client
     window.location.href = mailtoLink;
+}
+
+function liveChat () {
+  document.getElementById('fashion').style.display = 'block';
 }
 
 </script>
