@@ -28,19 +28,21 @@
 <div class="overlay"></div>
 <a onclick="liveChat()"><header>
 <h1>STANGL</h1>
+<nav>
+  Phone: 913.206.4474  |  Email: ZachStangl@gmail.com
+</nav>
 </header></a>
 
 
 
 <div id="main">
-<iframe src="tabs/commercial.html" style="height: 800px; width: 100%; border: none;"></iframe>
+<iframe id="iframe" src="tabs/commercial.html" style="height: 800px; width: 100%; border: none;"></iframe>
 </div>
 <select id="service-select" class="button white-button" onchange="changeIframeSource(this.value)">
   <option value="tabs/commercial.html">Commercial HVAC</option>
-  <option value="tabs/residential.html">Residential HVAC</option>
+  <option value="tabs/residential.html">Residential</option>
   <option value="tabs/paint_booth.html">Paint Booth</option>
-  <option value="tabs/air_purification.html">Air Purification</option>
-  <option value="tabs/general_contracting.html">General Contracting</option>
+  <option value="index2.html">Air Purification</option>
 </select>
 <button onclick="composeEmail()" class="button red-button">Schedule Now</button>
 
