@@ -179,3 +179,9 @@ html {
 body {
   -ms-overflow-style: none;
 }
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1em;
+  }
+}
