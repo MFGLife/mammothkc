@@ -285,3 +285,17 @@ var swiper = new Swiper('.product-slider', {
     // Open the default email client
     window.location.href = mailtoLink;
 }
+
+
+function liveChat() {
+var fashionElement = document.getElementById('fashion');
+if (fashionElement.style.display === 'none') {
+  fashionElement.style.display = 'block';
+} else {
+  fashionElement.style.display = 'none';
+}
+}
+
+function changeIframeSource(value) {
+  document.getElementById('iframe').src = value;
+}
