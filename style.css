@@ -43,7 +43,7 @@ video {
   z-index: 999;
   align-items: center;
   justify-content: center;
-  bottom: 0px;
+  bottom: 50px;
   right: 0px; /* Adjust the left margin to be 70% of the screen width */
   width: 300px; /* Width is 70% of the screen width */
   font-size: 16px;
